@@ -23,3 +23,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Publish
+      uses: actions/upload-artifact@v2.3.1
+      with:
+        name: Artifact1
+        path: "/home/runner/work/Blazor/Blazor/bin/Release/netcoreapp3.1/blazorSolution.dll"
