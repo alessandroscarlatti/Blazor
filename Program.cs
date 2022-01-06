@@ -15,6 +15,7 @@ namespace blazorSolution
     {
         public static void Main(string[] args)
         {
+            // this is a comment
             CreateHostBuilder(args).Build().Run();
         }
 
